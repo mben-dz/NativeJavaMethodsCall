@@ -1,0 +1,378 @@
+object MainView: TMainView
+  Left = 0
+  Top = 0
+  ClientHeight = 552
+  ClientWidth = 380
+  Fill.Color = xFFF2F2F7
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 3
+  object Lyt_Main: TLayout
+    Align = Contents
+    Size.Width = 380.000000000000000000
+    Size.Height = 552.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rect_Main: TRectangle
+      Align = Contents
+      Fill.Kind = Gradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFE0E0E0
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFDEFBEE
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Size.Width = 380.000000000000000000
+      Size.Height = 552.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Lyt_Top: TLayout
+        Align = MostTop
+        Size.Width = 380.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Lyt_SysBar: TLayout
+          Align = MostTop
+          Size.Width = 380.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object Lyt_AppTitle: TLayout
+          Align = Client
+          Size.Width = 380.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Rect_AppTitle: TRectangle
+            Align = Client
+            Fill.Kind = Gradient
+            Fill.Gradient.Points = <
+              item
+                Color = xFAA7B8C4
+                Offset = 0.000000000000000000
+              end
+              item
+                Color = xFAD7F2F9
+                Offset = 1.000000000000000000
+              end>
+            Fill.Gradient.StartPosition.X = 0.500000000000000000
+            Fill.Gradient.StartPosition.Y = 1.000000000000000000
+            Fill.Gradient.StopPosition.X = 0.499999970197677600
+            Fill.Gradient.StopPosition.Y = 0.000000000000000000
+            Padding.Left = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            Size.Width = 380.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            Stroke.Kind = None
+            object Txt_AppTitle: TText
+              Align = Client
+              Size.Width = 366.000000000000000000
+              Size.Height = 25.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Native Java Methods  Call Demo v1.0'
+              TextSettings.Font.Size = 13.000000000000000000
+              TextSettings.Font.StyleExt = {00070000000000000004000000}
+              TextSettings.FontColor = xFF0B450B
+              TextSettings.HorzAlign = Leading
+            end
+          end
+        end
+      end
+      object Lyt_Status: TLayout
+        Align = MostBottom
+        Position.Y = 477.000000000000000000
+        Size.Width = 380.000000000000000000
+        Size.Height = 75.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Rect_Status: TRectangle
+          Align = Client
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFFF2F2F7
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = x96BFBFBF
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Size.Width = 380.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          Visible = False
+          object Lyt_ToolB: TLayout
+            Align = Client
+            Size.Width = 380.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+          object Lyt_Infos: TLayout
+            Align = MostBottom
+            Padding.Left = 7.000000000000000000
+            Padding.Top = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            Padding.Bottom = 1.000000000000000000
+            Position.Y = 50.000000000000000000
+            Size.Width = 380.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object Txt_Infos: TText
+              Align = Client
+              Size.Width = 366.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Stretch = True
+              Text = #169' 2024 com.MBenDelphi/NativeUssdDemo. All Rights Reserved.'
+              TextSettings.FontColor = claDarkred
+              TextSettings.HorzAlign = Leading
+              TextSettings.VertAlign = Trailing
+            end
+          end
+        end
+        object Rectangle1: TRectangle
+          Align = Client
+          Fill.Kind = Gradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFAA7B8C4
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFAD7F2F9
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.StartPosition.X = 0.500000000000000000
+          Fill.Gradient.StartPosition.Y = 1.000000000000000000
+          Fill.Gradient.StopPosition.X = 0.499999970197677600
+          Fill.Gradient.StopPosition.Y = 0.000000000000000000
+          Padding.Left = 7.000000000000000000
+          Padding.Top = 7.000000000000000000
+          Padding.Right = 7.000000000000000000
+          Padding.Bottom = 7.000000000000000000
+          Size.Width = 380.000000000000000000
+          Size.Height = 75.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          object Txt_Status: TText
+            Align = Client
+            Size.Width = 366.000000000000000000
+            Size.Height = 61.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Android %s ( %s Api Level)'
+            TextSettings.Font.Size = 14.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = xFF0B450B
+            TextSettings.HorzAlign = Leading
+            TextSettings.VertAlign = Leading
+          end
+        end
+      end
+      object Lyt_Client: TLayout
+        Align = Client
+        Size.Width = 380.000000000000000000
+        Size.Height = 427.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object TabView: TTabControl
+          Align = Contents
+          Size.Width = 380.000000000000000000
+          Size.Height = 427.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'TabViewStyle1'
+          TabHeight = 49.000000000000000000
+          TabIndex = 1
+          TabOrder = 0
+          TabPosition = None
+          Sizes = (
+            380s
+            427s
+            380s
+            427s)
+          object Tab_Loading: TTabItem
+            CustomIcon = <
+              item
+              end>
+            TextSettings.Trimming = None
+            IsSelected = False
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'Tab_Loading'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+          end
+          object Tab_Main: TTabItem
+            CustomIcon = <
+              item
+              end>
+            TextSettings.Trimming = None
+            IsSelected = True
+            Size.Width = 8.000000000000000000
+            Size.Height = 8.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = ''
+            TabOrder = 0
+            Text = 'Tab_Main'
+            ExplicitSize.cx = 8.000000000000000000
+            ExplicitSize.cy = 8.000000000000000000
+            object Rect_ToolBar: TRectangle
+              Align = MostTop
+              Fill.Kind = Gradient
+              Fill.Gradient.Points = <
+                item
+                  Color = xB4FFFFFF
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFFF2F2F7
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Padding.Left = 7.000000000000000000
+              Padding.Right = 7.000000000000000000
+              Size.Width = 380.000000000000000000
+              Size.Height = 75.000000000000000000
+              Size.PlatformDefault = False
+              Stroke.Kind = None
+              object Txt_1: TText
+                Align = Bottom
+                Position.X = 7.000000000000000000
+                Position.Y = 56.000000000000000000
+                Size.Width = 366.000000000000000000
+                Size.Height = 19.000000000000000000
+                Size.PlatformDefault = False
+                Text = 'Enter your String to Reverse it'
+                TextSettings.FontColor = claBlue
+                TextSettings.HorzAlign = Leading
+              end
+              object GridLyt_Btns: TGridPanelLayout
+                Align = Client
+                Size.Width = 366.000000000000000000
+                Size.Height = 56.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                ColumnCollection = <
+                  item
+                    Value = 53.000000000000000000
+                  end
+                  item
+                    Value = 47.000000000000000000
+                  end>
+                ControlCollection = <
+                  item
+                    Column = 0
+                    Control = Btn_GetNative_HelloWorld
+                    Row = 0
+                  end
+                  item
+                    Column = 1
+                    Control = Btn_GetNative_JavaReverseStr
+                    Row = 0
+                  end>
+                RowCollection = <
+                  item
+                    Value = 100.000000000000000000
+                  end>
+                object Btn_GetNative_HelloWorld: TButton
+                  Align = Client
+                  Size.Width = 193.979995727539100000
+                  Size.Height = 56.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 0
+                  Text = 'Get Log HelloWorld'
+                  TextSettings.Trimming = None
+                  OnClick = Btn_GetNative_HelloWorldClick
+                end
+                object Btn_GetNative_JavaReverseStr: TButton
+                  Align = Client
+                  Size.Width = 172.020004272460900000
+                  Size.Height = 56.000000000000000000
+                  Size.PlatformDefault = False
+                  TabOrder = 1
+                  Text = 'Java ReverseString'
+                  TextSettings.Trimming = None
+                  OnClick = Btn_GetNative_JavaReverseStrClick
+                end
+              end
+            end
+            object Lyt_Request: TLayout
+              Align = Top
+              Position.Y = 75.000000000000000000
+              Size.Width = 380.000000000000000000
+              Size.Height = 50.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              object Edt_ReverseStr: TEdit
+                Touch.InteractiveGestures = [LongTap, DoubleTap]
+                Align = Client
+                TabOrder = 0
+                Text = 'MBenDelphi Test'
+                TextSettings.HorzAlign = Center
+                Size.Width = 380.000000000000000000
+                Size.Height = 32.000000000000000000
+                Size.PlatformDefault = False
+                OnChange = Edt_ReverseStrChange
+              end
+            end
+            object Memo_Log: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              StyledSettings = [Family, Size, Style]
+              TextSettings.FontColor = xFF28B865
+              TextSettings.WordWrap = True
+              Align = Client
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 3.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 3.000000000000000000
+              Size.Width = 370.000000000000000000
+              Size.Height = 296.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'Memostyle'
+              TabOrder = 1
+              Viewport.Width = 362.000000000000000000
+              Viewport.Height = 288.000000000000000000
+              object Btn_GetTest: TButton
+                Align = Bottom
+                Position.Y = 207.000000000000000000
+                Size.Width = 362.000000000000000000
+                Size.Height = 81.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 0
+                Text = 'Get Test function'
+                TextSettings.Trimming = None
+                OnClick = Btn_GetTestClick
+              end
+            end
+          end
+        end
+      end
+    end
+  end
+end
